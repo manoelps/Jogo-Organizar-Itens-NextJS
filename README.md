@@ -18,8 +18,9 @@ bun dev
 
 Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
-##
-    Este jogo interativo, desenvolvido com Next.js, desafia suas habilidades de lógica e percepção ao mover cards para reorganizá-los em uma ordem específica. A seguir, você encontrará as instruções detalhadas sobre como jogar.
+# Descrição:
+
+Este jogo interativo, desenvolvido com Next.js, desafia suas habilidades de lógica e percepção ao mover cards para reorganizá-los em uma ordem específica. A seguir, você encontrará as instruções detalhadas sobre como jogar.
 
 
 # Como Jogar:
