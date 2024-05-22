@@ -26,7 +26,7 @@ const Page = () => {
 							}}
 							key={galery_index}
 							className={classNames(
-								'flex justify-start items-center shadow-md gap-2 p-1 w-auto h-[80px] cursor-pointer hover:bg-[#D6AD76] bg-[#D6AD76] border-[8px] border-[#EFBF9F] rounded',
+								'flex justify-start items-center shadow-md gap-2 p-1 w-auto h-[80px] cursor-pointer hover:bg-[#D6AD76]/90 bg-[#D6AD76] border-[8px] border-[#EFBF9F] rounded',
 								shake && galery_index === activeGalery && !galery.complete ? 'animate-shake' : '',
 								galery.complete ? 'cursor-default' : ''
 							)}
