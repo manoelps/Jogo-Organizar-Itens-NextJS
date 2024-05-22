@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jogo-Organizar-Itens-NextJS
+
+Jogo Organizar Itens NextJS, utilizando [Next.js](https://nextjs.org/) versão 14.2.3
 
 ## Getting Started
 
-First, run the development server:
+Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##
+    Este jogo interativo, desenvolvido com Next.js, desafia suas habilidades de lógica e percepção ao mover cards para reorganizá-los em uma ordem específica. A seguir, você encontrará as instruções detalhadas sobre como jogar.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# Como Jogar:
 
-To learn more about Next.js, take a look at the following resources:
+Bem-vindo ao nosso jogo de reorganizar itens! Este jogo interativo, desenvolvido com Next.js, desafia suas habilidades de lógica e percepção ao mover cards para reorganizá-los em uma ordem específica.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Objetivo do Jogo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+O objetivo do jogo é reorganizar todos os cards na ordem correta, movendo-os para os espaços vagos disponíveis. Cada card pode ser movido apenas para um espaço adjacente vazio.
 
-## Deploy on Vercel
+## Instruções de Uso
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Início do Jogo
+Ao iniciar o jogo, você verá uma série de cards dispostos em uma grade, com 3 espaços vagos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Mover um Card
+Para mover um card, siga estes passos:
+
+1. **Selecione o Card:** Clique no card que você deseja mover. O card selecionado ficará destacado para indicar que está pronto para ser movido.
+2. **Selecione o Espaço Vago:** Clique no espaço vago onde você deseja mover o card. O card selecionado será movido para o espaço vago escolhido.
+
+## Exemplo de Uso
+
+1. Você vê uma grade de cards embaralhados com um espaço vago.
+2. Clique no card que deseja mover (ele será destacado).
+3. Clique no espaço vago para mover o card para esse espaço.
+4. Continue movendo os cards até que todos estejam na ordem correta.
+5. Clique em "Reiniciar" para começar uma nova partida.
+
+<p>&nbsp</p>
+
+![alt text](images-git/image.png)
+
+![alt text](images-git/image-1.png)
+
+![alt text](images-git/image-2.png)
