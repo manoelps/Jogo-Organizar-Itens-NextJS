@@ -52,12 +52,6 @@ Para mover um card, siga estes passos:
 
 <p>&nbsp</p>
 
-![alt text](images-git/image.png)
-
-![alt text](images-git/image-1.png)
-
-![alt text](images-git/image-2.png)
-
 ![alt text](images-git/image-3.png)
 
 
