@@ -57,3 +57,12 @@ Para mover um card, siga estes passos:
 ![alt text](images-git/image-1.png)
 
 ![alt text](images-git/image-2.png)
+
+![alt text](images-git/image-3.png)
+
+
+# Dispositivos móveis
+
+![alt text](images-git/image-4.png)
+
+![alt text](images-git/image-5.png)
