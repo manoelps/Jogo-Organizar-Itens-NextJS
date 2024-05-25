@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Jorgo Organizar Itens',
-	description: 'Jorgo Organizar Itens'
+	title: 'Jogo Organizar Itens',
+	description: 'Jogo Organizar Itens'
 };
 
 export default function RootLayout({
