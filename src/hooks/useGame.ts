@@ -14,6 +14,9 @@ const useGame = () => {
 
 	const [shake, setShake] = useState(false);
 
+	const [easyMode, setEasyMode] = useState<'easy' | 'hard'>('easy');
+	const [openEasyMode, setOpenEasyMode] = useState<boolean>(true);
+
 	const handleReload = () => {
 		window.location.reload();
 	};
@@ -78,32 +81,30 @@ const useGame = () => {
 	};
 
 	const start = () => {
+		setOpenEasyMode(true);
 		cleanGridItems();
 
 		const initialGallery = [...galleries];
-		const reseted = initialGallery.filter(item => item.full !== false);
 
 		const numberOfCards = cards.length;
 		const novaOrdem = gerarNumerosAleatoriosSemRepeticao(numberOfCards);
 
 		let index = 0;
 
-		reseted.map(galeria => {
-			for (let i = 0; i < 3; i++) {
-				if (galeria.items.length < 3) {
-					galeria.items.push(cards[novaOrdem[index]]);
+		initialGallery.map((galeria, indice) => {
+			if (indice <= 11) {
+				for (let i = 0; i < 3; i++) {
+					if (galeria.items.length < 3) {
+						galeria.items.push(cards[novaOrdem[index]]);
+					}
+					index++;
 				}
-				index++;
+			} else if (indice === 12) {
+				galeria.full = false;
 			}
 		});
 
-		reseted.push({
-			items: [],
-			full: false,
-			complete: false
-		});
-
-		setGalleries(reseted);
+		setGalleries(initialGallery);
 	};
 
 	const cleanGridItems = () => {
@@ -124,6 +125,7 @@ const useGame = () => {
 
 	useEffect(() => {
 		start();
+		return () => {};
 	}, []);
 
 	return {
@@ -135,7 +137,11 @@ const useGame = () => {
 		activeItem,
 		resetGame,
 		play,
-		handleReload
+		handleReload,
+		easyMode,
+		setEasyMode,
+		openEasyMode,
+		setOpenEasyMode
 	};
 };
 
